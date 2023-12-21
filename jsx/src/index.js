@@ -6,11 +6,11 @@ const home = ReactDOM.createRoot(document.getElementById('home'));
 home.render(<App />);
 
 function App() {
-  let message = "Bye there!";
+  let message = {text : "Bye there!"};
   if (Math.random() > 0.5) {
-    message = "Hi There!";
+    message.text = "Hi There!";
   }
   
   //return React.createElement("h3", null, message);      // using js
-  return <h3> {message} </h3>                             // using jsx
+  return <h3> {message.text} </h3>                        // using jsx
 }
