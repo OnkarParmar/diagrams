@@ -12,5 +12,8 @@ function App() {
   }
   
   //return React.createElement("h3", null, message);      // using js
-  return <h3> {message.text} </h3>                        // using jsx
+  return <div>
+      <h3> {message.text} </h3>                       
+      <h3> {new Date().toLocaleTimeString()} </h3>     
+    </div>   
 }
